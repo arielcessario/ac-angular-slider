@@ -1,0 +1,157 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 17, slide.scss */
+.slide {
+  transition: all 0.5s;
+}
+
+/* line 25, slide.scss */
+.slide.ng-add {
+  z-index: 1;
+  opacity: 1;
+}
+
+/* line 33, slide.scss */
+.slide.ng-hide {
+  z-index: 0;
+  transform: scale(10, 10);
+  opacity: 0;
+}
+
+/* line 40, slide.scss */
+#home {
+  overflow: hidden;
+  z-index: 3 !important;
+  position: relative;
+}
+/* line 45, slide.scss */
+#home #img01 {
+  background: url("./imgs/background01.jpg") center center no-repeat;
+}
+/* line 49, slide.scss */
+#home #img02 {
+  background: url("./imgs/background02.jpg") center center no-repeat;
+}
+/* line 52, slide.scss */
+#home #img03 {
+  background: url("./imgs/background01.jpg") center center no-repeat;
+}
+/* line 55, slide.scss */
+#home #img04 {
+  background: url("./imgs/background02.jpg") center center no-repeat;
+}
+/* line 59, slide.scss */
+#home #img01, #home #img02, #home #img03, #home #img04 {
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+  transform-origin: 50% 50% 0 !important;
+  background-size: contain;
+  transition: all 0.5s;
+}
+
+/* line 74, slide.scss */
+.texto-slide {
+  width: 100%;
+  position: absolute;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  top: 180px;
+  max-height: 200px;
+}
+/* line 87, slide.scss */
+.texto-slide span {
+  color: #039FB2;
+  font-weight: 100;
+}
+@media (max-width: 600px) {
+  /* line 74, slide.scss */
+  .texto-slide {
+    font-size: 20px;
+  }
+}
+@media (min-width: 601px) and (max-width: 800px) {
+  /* line 74, slide.scss */
+  .texto-slide {
+    font-size: 20px;
+  }
+}
+@media (min-width: 801px) {
+  /* line 74, slide.scss */
+  .texto-slide {
+    font-size: 50px;
+  }
+}
